@@ -9,4 +9,6 @@ func main() {
 	d := 5
 
 	fmt.Println(a, b, c, d)
+	fmt.Printf("%T\n", c)
+	fmt.Printf("%T\n", d)
 }
