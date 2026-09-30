@@ -15,7 +15,11 @@ func main() {
 		fmt.Printf("b[%d] = %d\n", i, v)
 	}
 
+	fmt.Printf("%p\n", &b)
+
 	b = a
+
+	fmt.Printf("%p\n", &b)
 
 	fmt.Println()
 	for i, v := range b {
