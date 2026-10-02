@@ -7,7 +7,7 @@ import (
 
 func main() {
 	var str string = "Hello World"
-	var slice []byte = []byte(str)
+	var slice []byte = []byte(str) //uint8
 
 	fmt.Printf("str:\t%p\n", unsafe.StringData(str))    // 문자열 struct 안에 있는 Data의 주소
 	fmt.Printf("str struct:\t%p\n", &str)               // 문자열의 struct 포인터

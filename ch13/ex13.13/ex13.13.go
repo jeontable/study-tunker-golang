@@ -9,4 +9,7 @@ func main() {
 	fmt.Printf(str1)
 	fmt.Printf("\n")
 	fmt.Printf(str2)
+	fmt.Println()
+	fmt.Printf("%p\n", &str1)
+	fmt.Printf("%p\n", &str2)
 }

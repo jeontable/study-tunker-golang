@@ -10,7 +10,12 @@ func main() {
 	fmt.Println(str)
 	fmt.Println(string(runes))
 
-	fmt.Println([]rune(runes)) //slicing 한 것과 같은 효과
+	fmt.Println()
+	fmt.Println(runes)
+	fmt.Printf("%T\n", runes)
+	fmt.Println()
+
+	fmt.Println([]rune(str)) //slicing 한 것과 같은 효과
 
 	for _, c := range []rune(runes) {
 		fmt.Printf("%c", c)

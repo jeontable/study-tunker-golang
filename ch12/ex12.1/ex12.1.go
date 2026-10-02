@@ -11,6 +11,7 @@ func main() {
 
 	p = &a
 
+	fmt.Printf("a의 메모리 주소: %p\n", &a)
 	fmt.Printf("p의 값: %p\n", p)
 	fmt.Printf("p가 가리키는 메모리의 값: %d\n", *p)
 
