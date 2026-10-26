@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unsafe"
+)
 
 func main() {
 	slice1 := make([]int, 3, 5)
@@ -10,6 +13,8 @@ func main() {
 	fmt.Println(len(slice2), cap(slice2))
 	fmt.Println(slice1)
 	fmt.Println(slice2)
+	fmt.Printf("%p\n", unsafe.SliceData(slice1))
+	fmt.Printf("%p\n", unsafe.SliceData(slice2))
 
 	slice1[1] = 100
 
@@ -17,4 +22,6 @@ func main() {
 	fmt.Println(len(slice2), cap(slice2))
 	fmt.Println(slice1)
 	fmt.Println(slice2)
+	fmt.Printf("%p\n", unsafe.SliceData(slice1))
+	fmt.Printf("%p\n", unsafe.SliceData(slice2))
 }
