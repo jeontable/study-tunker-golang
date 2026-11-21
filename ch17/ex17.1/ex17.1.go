@@ -19,7 +19,7 @@ func main() {
 
 	withdrawFunc(a, 30)
 
-	a.withdrawMethod(30)
+	(*a).withdrawMethod(30)
 
 	fmt.Printf("%d\n", a.balance)
 
