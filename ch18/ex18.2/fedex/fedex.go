@@ -6,5 +6,5 @@ type FedexSender struct {
 }
 
 func (f *FedexSender) Send(parcel string) {
-	fmt.Println("Fedex sends %v parcel\n", parcel)
+	fmt.Printf("Fedex sends %v parcel\n", parcel)
 }
